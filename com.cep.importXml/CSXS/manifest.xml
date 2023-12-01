@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ExtensionManifest ExtensionBundleId="com.cep.importXML" ExtensionBundleVersion="1.0.0" Version="7.0" 
+	ExtensionBundleName="com.cep.importXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="com.cep.importXML.panel" Version="1.0.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+      <Host Name="IDSN" Version="13.0" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="7.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.cep.importXML.panel">
+			<DispatchInfo>
+				<Resources>
+					<MainPath>./client/index.html</MainPath>
+					<ScriptPath>./host/index.jsx</ScriptPath>
+					    <CEFCommandLine>
+          <Parameter>--enable-nodejs</Parameter>
+          <Parameter>--mixed-context</Parameter>
+        </CEFCommandLine>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>false</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>xml Import</Menu>
+					<Geometry>
+						<Size>
+							<Height>300</Height>
+							<Width>360</Width>
+						</Size>
+						<MinSize>
+							<Height>300</Height>
+							<Width>360</Width>
+						</MinSize>
+					</Geometry>
+					<Icons />
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>

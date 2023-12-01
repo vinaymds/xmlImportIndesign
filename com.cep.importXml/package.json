@@ -1,0 +1,11 @@
+{
+  "name": "com.cep.importxml",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">Developed by MetaDesign Solutions for staale@tikktakk.no</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

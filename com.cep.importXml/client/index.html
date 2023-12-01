@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container-login {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 115px;
+        /* border: 2px white solid; */
+      }
+
+      img {
+        height: 24px;
+        width: 25px;
+        background-color: white;
+        padding: 1.5px;
+        border: 2px solid #007bff;
+      }
+      #btn-text {
+        border-radius: 0; /* Removes the default curve */
+        background-color: #007bff; /* Sets the background color */
+        color: #fff; /* Sets the text color */
+        padding: 10px 10px; /* Sets the padding */
+        text-decoration: none; /* Removes the underline */
+        cursor: pointer; /* Sets the cursor to a pointer */
+        border: none;
+        height: 31px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-login">
+      <img
+        class="google-icon"
+        src="js/images/google-logo.png"
+        alt="googlelogo"
+      />
+
+      <button id="btn-text" onclick="onClickHandler()">
+        Sign in with Google
+      </button>
+    </div>
+    <script type="text/javascript" src="js/lib/CSInterface.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

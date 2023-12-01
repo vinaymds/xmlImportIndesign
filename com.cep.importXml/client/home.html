@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>InDesign Import Files Extension</title>
+    <script src="./js/lib/xml-js.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container1">
+      <div class="container-heading">Article Id</div>
+      <div class="article-id-row">
+        <input
+          class="topcoat-text-input--large"
+          type="text"
+          id="xml-file"
+          name="xml-file"
+          placeholder="Enter Article Id"
+        />
+        <!-- <div class="topcoat-row justify-between"> -->
+        <!-- <span id="xml-file-name">No file selected</span> -->
+        <button class="topcoat-button--large" id="xml-file-select">
+          Fetch...
+        </button>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-heading">Article Layout</div>
+      <input
+        class="topcoat-text-input--large"
+        type="file"
+        id="layouts-folder-input"
+        name="layouts-folder"
+        accept="*/directory, inode/directory"
+        directory="true"
+        webkitdirectory="true"
+        style="display: none"
+      />
+
+      <div class="topcoat-row justify-between">
+        <span id="layouts-folder-path">No folder selected</span>
+        <button class="topcoat-button--large" id="layouts-folder-select">
+          Select...
+        </button>
+      </div>
+
+      <div class="topcoat-row justify-start">
+        <div
+          id="layout-select"
+          class="custom-select topcoat-text-input--large"
+          data-name="layout-select"
+          disabled
+        >
+          <div class="select-selected"></div>
+          <div class="select-options"></div>
+        </div>
+      </div>
+
+      <div class="topcoat-row">
+        <label class="topcoat-radio-button">
+          <input type="checkbox" id="checkbox-untag" />
+          <div class="topcoat-checkbox__checkmark"></div>
+          Untag content after placement
+        </label>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <button class="topcoat-button--large" id="import-files-btn">
+        Import Article
+      </button>
+
+      <!-- Button for dev purposes to display changes made in HTML file without restarting extension. -->
+      <!-- <button class="topcoat-button--large" onclick="window.location.reload()">Reload</button> -->
+    </div>
+
+    <script type="text/javascript" src="js/lib/CSInterface.js"></script>
+    <script type="text/javascript" src="js/CustomSelect.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+  </body>
+</html>
